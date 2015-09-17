@@ -8,7 +8,7 @@ repositories {
     mavenCentral()
     maven {
         name "bintray"
-        url  "https://dl.bintray.com/svangasse/maven"
+        url  "https://dl.bintray.com/screentimelabs/maven"
     }
 }
 
@@ -18,6 +18,7 @@ bintray {
     configurations = ['archives']
     publish = true
     pkg {
+        userOrg = 'screentimelabs'
         repo = 'maven'
         name = 'google-cloud-storage-gradle-tasks'
     }
@@ -26,20 +27,9 @@ bintray {
 dependencies {
     compile gradleApi()
     compile localGroovy()
-
-    compile 'com.google.oauth-client:google-oauth-client:1.20.0'
-    compile 'com.google.oauth-client:google-oauth-client-java6:1.20.0'
-    compile 'com.google.oauth-client:google-oauth-client-jetty:1.20.0'
-
-    compile 'com.google.api-client:google-api-client:1.20.0'
-
     compile 'com.google.apis:google-api-services-storage:v1-rev44-1.20.0'
-
-    compile 'com.google.http-client:google-http-client-jackson2:1.20.0'
-
-    testCompile 'junit:junit:4.12'
 }
 
 group = 'com.screentime'
-version = '1.1.2'
+version = '0.1.2'
 
