@@ -31,5 +31,5 @@ dependencies {
 }
 
 group = 'com.screentime'
-version = '0.1.2'
+version = '0.9'
 

@@ -13,9 +13,8 @@ class UploadTask extends AbstractCloudStorageTask {
 
     String remoteFilePath
     String contentType
-    String localFile
+    File localFile
     String bucketName
-
 
     @TaskAction
     def uploadFile () {
